@@ -1,6 +1,7 @@
 import React, { createContext, useState } from 'react'
 import { PRODUCTS } from '../products'
 
+// START OF HIGHLIGHTED CODE
 export const ShopContext = createContext(null)
 // sets the default state of the cart to an object with the product id as the key, and number of times it was added to cart as the value {1: 0, 2: 0}
 const getDefaultCart = () => {
@@ -62,3 +63,5 @@ const ShopContextProvider = ({ children }) => {
 }
 
 export default ShopContextProvider
+
+// END OF HIGHLIGHTED CODE
